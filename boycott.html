@@ -1,0 +1,45 @@
+<!-- boycott.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toucan Project - Boycott</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <label for="eanInput">Welcome to <h1>Ask The Bird</h1></label>
+    <h2>Here you can see if the products is in the boycott list or not.</h2>
+    <p>All you have to do is scan the barcode or write the serial number in the search bar.</p><br>
+    <p>كل ما عليك فعله هو مسح الباركود أو كتابة الرقم التسلسلي في شريط البحث.</p>
+
+    <input type="text" id="eanInput" placeholder="Enter the EAN-13 code : ">
+    <button onclick="getProductInfo()">Search</button>
+
+    <!-- New search bar for "Search by brand" -->
+    <div class="brand-search-container">
+        <input type="text" id="brandInput" placeholder="Search by brand">
+        <button onclick="searchByBrand()">🔍</button>
+    </div>
+
+    <div id="productInfo" class="hidden">
+    </div>
+</div>
+
+<div id="boycottPopup" class="popup-container">
+  <div class="popup-content">
+      <div class="popup-header">
+          <h2>Boycott Result</h2>
+          <span class="close-icon" onclick="closeBoycottPopup()">×</span>
+      </div>
+      <div class="popup-body" id="popupBodyContent">
+          
+      </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

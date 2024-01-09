@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toucan Project</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    
+</head>
+<body>
+
+   
+
+<!-- Starting Page with Video -->
+<div class="starting-page">
+    <video autoplay muted loop id="backgroundVideo">
+        <!-- <source src="Gen-22.mp4" type="video/mp4"> -->
+        <!-- <source src="/202312141151.mp4" type="video/mp4"> -->
+        <source src="/gen-23.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <div class="starting-content">
+        <!-- <h1>Ask The Bird</h1> -->
+        <button class="green-btn" onclick="launchApp()">Start</button>
+    </div>
+
+    <!-- Mute/Unmute Button -->
+    <!-- --button class="mute-btn" onclick="toggleMute()">🔊</button -->
+
+    
+
+    <!-- Burger Menu -->
+<div class="burger-menu" onclick="toggleMenu()">
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+</div>
+
+<!-- Vertical Menu -->
+<div class="menu-list">
+    <a href="donate.html" title="Donate">Donate</a>
+    <a href="contact.html" title="Contact">Contact</a>
+    <a href="boycott.html" title="Boycott">Boycott</a>
+    <a href="#" title="Mute"  onclick="toggleMute()">Mute</a>
+
+</div>
+
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+

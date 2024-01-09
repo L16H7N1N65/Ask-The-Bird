@@ -1,0 +1,301 @@
+:root {
+  --font_size_h1: 2.5em;
+  --font_s_input_btn: 1em;
+}
+/* html {
+  background-color: black;
+} */
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  overflow: hidden;
+  /* background-color: black; */
+  display: grid;
+  margin: 2em;
+}
+@media only screen and (min-width: 800px) and (max-aspect-ratio: 16/9) {
+  #backgroundVideo {
+    width: 100vw;
+    height: auto;
+  }
+  .starting-page {
+    height: 80vh;
+  }
+  #backgroundVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  /* #backgroundVideo {
+  transform: translate(10%, 0%);
+  position: fixed;
+} */
+
+  .overlay {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .starting-content {
+    top: 20%;
+    position: absolute;
+
+    transform: translate(146%, 158%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: calc(var(--font_size_h1) * 2.5);
+    transform: translateX(0);
+  }
+
+  .green-btn {
+    font-size: calc(var(--font_s_input_btn) * 4);
+    background-color: #4caf50;
+    border-radius: 5px;
+    color: #fff;
+    /* padding: 10px 20px; */
+    border: none;
+    cursor: pointer;
+  }
+
+  .burger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .burger-line {
+    width: 48px;
+    height: 8px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .burger-menu.open .burger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger-menu.open .burger-line:nth-child(2) {
+    opacity: 50;
+  }
+
+  .burger-menu.open .burger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 24%;
+    z-index: 2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: display 0.3s;
+  }
+
+  .menu-list a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgba(76, 175, 80, 0.3);
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+
+  .menu-list a:hover {
+    background-color: rgba(76, 175, 80, 1);
+  }
+
+  .search-container {
+    bottom: 40px;
+  }
+  .productInfo {
+    display: grid;
+  }
+  input,
+  button {
+    font-size: calc(var(--font_s_input_btn) * 1.2);
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  body {
+    /* display: grid; */
+    margin: 1em;
+  }
+
+  .starting-page {
+    position: relative;
+    height: 100vh;
+  }
+
+  #backgroundVideo {
+    transform: translate(-26%, 0%);
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .overlay {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .starting-content {
+    display: flex;
+    position: absolute;
+    transform: translate(-4%, 615%);
+    text-align: center;
+    color: #ecf1ec;
+    z-index: 1;
+    flex-direction: column;
+    width: 100vw;
+}
+  }
+
+  h1 {
+    font-size: calc(var(--font_size_h1) * 1.3);
+    transform: translateX(12%);
+  }
+
+  .green-btn {
+    font-size: 3rem;
+    background-color: #4caf50;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    /* font-size: var(--font_s_input_btn); */
+    border: none;
+    cursor: pointer;
+  }
+
+  /* To be finished tomorrow, add some style and play with opacity */
+
+  .burger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .burger-line {
+    width: 48px;
+    height: 8px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .burger-menu.open .burger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger-menu.open .burger-line:nth-child(2) {
+    opacity: 50;
+  }
+
+  .burger-menu.open .burger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: fixed;
+    top: 24px;
+    /* right: 24%; */
+    z-index: 2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: display 0.3s;
+  }
+
+  .menu-list a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgba(76, 175, 80, 0.3);
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+
+  .menu-list a:hover {
+    background-color: rgba(76, 175, 80, 1);
+  }
+
+  /* Result Page Styles */
+
+  .search-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    padding: 10px;
+    font-size: var(--font_s_input_btn);
+    flex-grow: 1;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+  }
+
+/* Define btn today to avoid issues or use ::child */
+
+button {
+  /* background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: var(--font_s_input_btn);
+  border: none;
+  cursor: pointer;
+  margin-top: 1em; */
+  margin: 0.5em;
+  border-radius: 5px;
+  
+}
+
+/* For the popup */
+.popup-container {
+  border-radius: 5px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-58%, 12%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toucan Project - Result Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+
+<!-- Search Bar with Spinning Wheel -->
+<!-- <div class="search-container">
+    <input type="text" id="eanInput" placeholder="Enter the EAN-13 code">
+    <button onclick="getProductInfo()">Search</button> TO BE MODIFIED -->
+    
+
+<div class="container">
+  <label for="eanInput">Welcome to <h1>Ask The Bird</h1></label>
+  <p>All you have to do is scan the barcode or write the serial number in the search bar.</p><br>
+  <p>كل ما عليك فعله هو مسح الباركود أو كتابة الرقم التسلسلي في شريط البحث.</p>
+  
+  <input type="text" id="eanInput" placeholder="Enter the EAN-13 code : ">
+  <button onclick="getProductInfo()">Search</button>
+  
+  <div id="productInfo" class="hidden">
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
