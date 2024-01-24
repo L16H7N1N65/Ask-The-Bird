@@ -18,6 +18,6 @@ Une bande sonore unique accompagne les interactions avec l'oiseau, créant une e
 
 ## Intégration du Principe du Projet PDF
 
-Le principe du projet PDF "Réalisation d'une application JavaScript donnant des informations sur un produit alimentaire" sera intégré en utilisant une approche similaire pour obtenir des informations à partir d'un champ de saisie. L'utilisateur pourra entrer les 13 chiffres du code EAN-13 pour obtenir des caractéristiques de l'oiseau (toucan) à partir de l'API world.openfoodfacts.org. Avant l'appel à l'API, une vérification de la validité du code EAN sera effectuée.
+"Réalisation d'une application JavaScript donnant des informations sur un produit alimentaire" sera intégré en utilisant une approche similaire pour obtenir des informations à partir d'un champ de saisie. L'utilisateur pourra entrer les 13 chiffres du code EAN-13 pour obtenir des caractéristiques de l'oiseau (toucan) à partir de l'API world.openfoodfacts.org. Avant l'appel à l'API, une vérification de la validité du code EAN sera effectuée.
 
 L'appel à l'API sera réalisé via une requête fetch à partir de l'URL spécifiée. Les données JSON retournées par l'API seront exploitées pour afficher les principales caractéristiques de l'oiseau. L'objectif est de fournir une expérience mobile-first inspirée des applications Yuka ou fr.openfoodfacts.org.
